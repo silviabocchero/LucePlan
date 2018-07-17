@@ -334,8 +334,9 @@ Product items section(hp)
 }
 
 .product-heading-features {
-	height: 100px;
-	margin-left: 70px;
+  max-width: 1280px;
+  height: 100px;
+  margin-left: 70px;
 }
 
 
@@ -610,7 +611,7 @@ h1{
 /* icons */
 
 .list-expertise{
-  width: 100vw;
+  max-width: 1280px;
   
   margin-top: -20px;
   margin-left: -150px;
@@ -667,7 +668,7 @@ h1{
 /* icons homepage products */
 
 .products-list-expertise{
-  width: 100%;
+  max-width: 1280px;
     
   display: flex;
   align-items: center;
