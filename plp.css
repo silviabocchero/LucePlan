@@ -1,0 +1,742 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: auto;
+	
+  
+}
+
+
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  background-image: url(images/menu-bg.png);
+  background-repeat: repeat-x;
+}
+
+
+/**********************************
+  VR section (hp)
+**********************************/
+
+.video-container {
+	position: relative;
+  
+	display: flex;
+	z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+}
+
+.video-img{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background-image:url(images/plp-hero.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  position: absolute;
+  
+  z-index: 1;
+}
+
+.ar-thing{
+  position: absolute;
+  bottom: -220px;
+  left: -290px;
+  opacity: 0.3;
+}
+
+.ar-thing:hover{
+  opacity: 1;
+}
+
+.overlay {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+	
+	position: absolute;
+	z-index: 1;
+}
+
+.heading-center {
+  text-align: center;
+  color: white;
+  font-size: 2.2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+
+.VR-light-CTA {
+  display: inline-block;
+  
+  margin-top: 40px;
+  padding: 20px 50px;
+  
+  border-radius: 50px;
+  border: 2px solid #9ea3a7;
+  background-color: transparent;
+  color: #333;
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  transition: background 300ms;
+}
+
+.btn-centering {
+ text-align: center;
+  margin-top: 20px;
+}
+
+.btn-cta {
+  display: inline-block;
+  
+  margin-top: 40px;
+  padding: 14px 40px;
+  
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  
+  transition: background 300ms;
+}
+
+.btn-cta:hover {
+  background-color: white;
+  color: black;
+}
+
+.overlay h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 0.9em;
+  
+}
+
+/**********************************
+  VR section (hp)
+**********************************/
+
+.features-container {
+  margin: 0;
+  padding: 40px 90px;
+  background-image: url(images/PLP-expertise-section.jpg);
+  background-repeat: no-repeat;
+  height: 430px;
+ 
+}
+
+.features-container-text {
+  max-width: 370px;
+  font-weight: 200;
+  line-height: 24px;
+}
+
+.features-container h2 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.list-expertise ul{
+  margin-top: 40px;
+  margin-bottom: 74px;
+  padding: 0px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.list-expertise ul li{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  
+}
+
+
+.list-expertise h4 {
+  max-width: 300px;
+  padding-right: 60px;
+  padding-left: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  
+  
+  text-align: center;
+  line-height: 2em;
+  letter-spacing: 4px;
+  
+}
+
+.item-border {
+  border-right: 1px solid black; 
+  
+}
+
+
+
+.products-container {
+  padding: 60px 90px;
+  background-color: #83B1C6;
+  max-width: 1280px;
+  position: relative;
+  
+}
+
+.products-container-line {
+  border-right: 1px solid white;
+  height: 50px;
+  position: absolute;
+  bottom: 80px;
+  left: 640px;
+}
+
+.products {
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  max-width: 1038px;
+  
+  
+}
+
+.products-item1 {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-item1 img {
+   padding-bottom: 20px;
+ }
+
+.products-item2 {
+  margin-top: 210px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-item2 img {
+  padding-bottom: 20px;
+}
+
+.products-item-img-hover:hover{
+  opacity: 0.7;
+}
+
+
+
+.products-container h3 {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+}
+
+.products-container h2 {
+  margin: 0;
+  margin-top: 10px;
+  max-width: 540px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  
+  color: white;
+  
+}
+
+.products-book-link {
+  color: white;
+  font-weight: 300;
+  
+  position: absolute;
+  right: 90px;
+  top: 60px;
+  opacity: 1;
+}
+
+.products-book-link:hover {
+  opacity: .5;
+}
+
+.cta-introduction {
+  margin-top: 74px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.btn-cta-white {
+  margin: 0 auto;
+  padding: 14px 40px;
+  border: 2px solid white;
+  color: white;
+  
+  text-decoration: none;
+  
+  transition: background 300ms;
+  
+}
+
+.btn-cta-white:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+.cta-button {
+  margin-top: 60px;
+  text-align: center;
+}
+
+
+.designer-container {
+	height: 330px;
+	background-image: url(images/hp-background-become-designer.png);
+	
+	
+}
+
+.btn-designer-container {
+	margin-left: 90px;
+	width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.news-and-social {
+	width: 1280px;
+	height: 600px;
+	background-color: #EDEDED;	
+}
+
+.news-and-social-box {
+	display: flex;
+}
+
+.news-and-social-title-container {
+	height: 200px;
+	width: 500px;
+	padding: 20px;
+    padding-top: 54px;
+	margin-left: 70px;
+}
+
+.news-events-container {
+	width: 50%;
+	height: 400px;
+	
+	padding-top: 30px;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: row;
+	
+}
+
+.news-and-social-title{
+  margin: 0;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.news-and-social-title2 {
+  margin: 0;
+  margin-top: 10px;
+  max-width: 540px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+  
+}
+
+.btn-cta-black {
+  margin: 0 auto;
+  margin-left: 0;
+  padding: 14px 40px;
+  border: 2px solid black;
+  color: black;
+  
+  text-decoration: none;
+  
+  transition: background 300ms;
+  
+}
+
+.designer-container .btn-cta-black{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.btn-cta-black:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+/*===================PDP STYLING STARTS HERE===================
+===============================================================*/
+
+.diade-container {
+  margin-top: 0;
+  padding: 60px 90px;
+  max-width: 1280px;
+  height: 828px;
+  background-image: url(images/pdp-diade.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.diade-container-text h3 {
+  margin: 0;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+.diade-container-text h2 {
+  font-size: 28px;
+  max-width: 378px;
+}
+
+.diade-container-options {
+  position: absolute;
+  top: 240px;
+  right: 114px;
+}
+
+.diade-container-options ul {
+  padding-left: 0;
+}
+
+.diade-container-options ul li {
+  
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  line-height: 34px;
+  text-transform: uppercase;
+  font-weight: 300;
+  
+  color: #636363;
+}
+
+.diade-container-options ul li:hover{
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+
+
+i {
+  margin-left: 40px;
+  border: solid #636363;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.arrow {
+  transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.diade-container-cta-container {
+  max-width: 910px;
+  margin: 0 auto;
+  margin-top: 480px;
+  text-align: center;
+  border-top: 1px solid #636363;
+  
+  position: relative;
+}
+
+.diade-container-cta-container-line{
+  border-right: 1px solid black;
+  height: 50px;
+  position: absolute;
+  top: 40px;
+  left: 455px;
+}
+
+.diade-container-options-btn {
+  margin-top: 70px;
+}
+
+
+.btn-save, .btn-donwload {
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  
+  color: #636363;
+  
+}
+
+.btn-save:hover{
+  font-weight: 600;
+}
+
+.btn-donwload:hover{
+  font-weight: 600;
+}
+
+
+
+
+.diade-tech-container {
+  max-width: 1280px;
+  height: 440px;
+  background-image: url(images/pdp-diade-2.jpg);
+  background-repeat: no-repeat;
+  
+  color: white;
+  
+  position: relative;
+}
+
+.diade-tech-container-text {
+  margin-top: 0;
+  padding: 60px 90px;
+  padding-bottom: 0;
+  max-width: 500px;
+}
+
+.diade-tech-icons {
+  margin-top: 30px;
+  
+  width: 170px;
+  height: 26px;
+  
+  background-image: url(icons/pdp-icons.png);
+  background-repeat:no-repeat;
+}
+
+
+.diade-tech-cta-container {
+  padding-left: 90px;
+  
+}
+
+.diade-tech-cta-container .cta-button {
+  margin-top: 88px;
+  text-align: left;
+}
+
+.diade-tech-cta-container .cta-button .btn-cta-white {
+  margin-right: 20px;
+}
+
+.diade-tech-container-line{
+  width: 590px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  
+  border-top: 1px solid white;
+}
+
+.diade-tech-container-line H3{
+  margin-top: 10px;
+}
+
+.call-back-container {
+  max-width: 1280px;
+  height: 360px;
+  
+  position: relative;
+}
+
+.call-back-container-text h3{
+  margin: 0;
+  text-transform: uppercase;  
+  font-size: 1em;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  
+
+}
+
+.call-back-container-text h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.call-back-container-text {
+  max-width: 580px;
+  
+  padding: 60px 0px 0px 90px;
+}
+
+.call-back-container-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  z-index: -1;
+  
+  background-image: url(images/pdp-customisation.jpg);
+  background-repeat: no-repeat;
+  
+  opacity: .5;
+} 
+
+.call-back-container .cta-button {
+  text-align: left;
+  padding: 40px 90px;
+}
+
+.showcase-container {
+  margin-top:0;
+  max-width: 1280px;
+  height: auto;
+  background-color: #f0f0f0;
+}
+
+.showcase-container-content {
+  display: flex;
+  justify-content: center;
+  
+}
+.showcase-container-content p {
+  font-size: 20px;
+  padding-right: 65px;
+}
+.showcase-container div {
+  margin-top: 14px;
+  padding-left: 65px;
+  font-size: 28px;
+}
+div.showcase-container-content {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+
+
+
+/* styling */
+
+h2 {
+  font-size: 1.8em;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+h3 {
+  font-size: 1em;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+h1{
+  margin-top: 10px;
+}
+
+p{
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+
+
+.zoom {
+  margin: 0 auto;
+  
+  background-color: green;
+  background-image: url(images/diade-closed.jpg);
+  background-size: cover;
+  transition: transform 0, opacity .5s;/* Animation */
+  
+  width: 120px;
+  height: 72px;
+  
+  opacity: 0;
+  
+  position: absolute;
+  top: 251px;
+  left: 480px;
+}
+
+.zoom:hover {
+    transform: scale(8); opacity: 1; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom-2 {
+  margin: 0 auto;
+  
+  background-color: green;
+  background-image: url(images/diade-texture.jpg);
+  background-size: cover;
+  transition: transform 0, opacity .5s;/* Animation */
+  
+  width: 100px;
+  height: 60px;
+  
+  opacity: 0;
+  
+  position: absolute;
+  top: 350px;
+  left: 230px;
+}
+
+.zoom-2:hover {
+    transform: scale(4); opacity: 1; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.over{
+  z-index: 30!important;
+}

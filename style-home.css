@@ -1,0 +1,810 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: auto;
+	
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  background-image: url(images/menu-bg.png);
+  background-repeat: repeat-x;
+}
+
+
+
+/**********************************
+  HOMEPAGE
+
+
+
+**********************************/
+
+/**********************************
+  Button styles
+**********************************/
+.btn-cta {
+  display: inline-block;
+  
+  margin-top: 40px;
+  padding: 14px 40px;
+  
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  
+  transition: background 300ms;
+}
+
+.btn-cta:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.btn-cta-inverted {
+  border: 2px solid black;
+  background-color: none;
+  color: black;
+}
+
+.btn-cta-inverted:hover {
+ background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-cta-border {
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+  margin-right: 50px;
+  float: right;
+  width: 15%;
+  opacity: 1;
+  transition: color 300ms;
+  padding-bottom: 15px;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.btn-cta-grey {
+	color: #919191;
+	border: 2px solid #919191;
+}
+
+.btn-cta btn-cta-inverted-dark {
+	color: black;
+	border: 2px solid black;
+}
+
+.btn-centering {
+  width: 240px;
+  margin: auto;
+}
+
+.centerint-top {
+  width: 170px;
+}
+
+.center {
+  color: black;
+  border: 2px solid black;
+}
+
+.know-more-cta {
+  width: 300px;
+  float: left;
+  margin-left: 90px;
+  margin-top: 50px;
+  opacity: 0.6;
+}
+
+.btn-cta-border:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+/**********************************
+  BUBTTON CENTER IN THE VIDEO SECTION
+**********************************/
+.btn-heading-center {
+}
+
+.cta-bottom {
+  margin-top: 550px;
+  width: 200px;
+  text-align: center;
+}
+
+
+
+
+/**********************************
+  VR section (hp)
+**********************************/
+
+.video-container {
+	position: relative;
+	display: flex;
+	z-index:0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.video-container video{
+  width: 100%;
+}
+
+.video-img{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background-image:url(images/home-hero4.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  position: absolute;
+  
+  z-index: 1;
+}
+
+
+.overlay {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+	
+	position: absolute;
+	z-index:2;
+  
+}
+
+.heading-center {
+  text-align: center;
+}
+
+
+.VR-light-CTA {
+  display: inline-block;
+  
+  margin-top: 40px;
+  padding: 20px 50px;
+  
+  border-radius: 50px;
+  border: 2px solid #9ea3a7;
+  background-color: transparent;
+  color: #333;
+  
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  transition: background 300ms;
+}
+
+
+
+/**********************************
+Product items section(hp)
+**********************************/
+.product-container {
+	height: 650px;
+	background-color: #83B1C6;
+}
+
+.product-items-list{
+	background-image: url(images/HP-icons.png);
+	height: 300px;
+	width: 970px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+	
+	display: flex;
+	justify-content: center;
+}
+
+
+.product-heading {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 50px;
+}
+
+.left {
+  float: left;
+  width: 60%;
+}
+
+.product-heading1 {
+  color: black;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+.product-heading2 {
+	color: black;
+	font-size: 1.8em;
+	width: 550px;
+}
+
+.show-all-products {
+	color: #636363;
+	float: right;
+	
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #636363;
+    margin-top: 40px;
+	margin-right: 50px;
+}
+
+
+.projects {
+	width: 1260px;
+	height: 600px;
+	padding-top: 30px;
+}
+
+.projects-description {
+	background-image: url(images/hp-experience-icons.png);
+	width: 740px;
+	height: 220px;
+	
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+.project-image {
+	background-image: url(images/hp-project-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	height: 700px;
+	width: 1280px;
+  
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+  
+   display: flex;
+  justify-content: center;
+}
+
+
+.project-description {
+	width: 360px;
+	height: 600px;
+	background-color: #F2F2F2;
+	float: right;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.project-description-container {
+	width: 300px;
+	height: 400px;
+	display: flex;
+
+}
+
+/**********************************
+ Features container
+**********************************/
+.features-container{
+	background-image: url(images/hp-light-background.png);
+	height: 358px;
+	
+	display: flex;
+  padding-top: 30px;
+}
+
+.product-heading-features {
+	height: 100px;
+	margin-left: 70px;
+}
+
+
+.feature-title {
+	text-align: center;
+}
+
+.feature-title-right {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.feture-description {
+	text-align: center;
+}
+
+.feature-container-heading {
+	width: 30%;
+	float: right;
+}
+
+.grey-btn-heading {
+  color: red;
+  margin-top: -100px;
+  text-align: right;
+}
+
+
+/**********************************
+Become designer section
+**********************************/
+.designer-container {
+	height: 310px;
+	background-image: url(images/hp-background-become-designer.png);
+	
+	margin-top: 650px;
+}
+
+.btn-designer-container {
+	margin-left: 70px;
+  margin-top: 0;
+	width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.designer-container .btn-cta-inverted{
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+
+.news-and-social {
+	width: 1280px;
+	height: 800px;
+	background-color: #EDEDED;	
+}
+
+.news-and-social-box {
+	display: flex;
+    margin-top: 150px;
+}
+
+.news-and-social-title-container {
+	height: 200px;
+	width: 500px;
+	padding: 20px;
+    padding-top: 40px;
+	margin-left: 70px;
+}
+
+.news-events-container {
+	width: 50%;
+	height: 400px;
+	
+	padding-top: 30px;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: row;
+}
+
+/**********************************
+heading typography
+**********************************/
+.news-and-social-title {
+	font-size: 0.8em;
+    letter-spacing: 4px;
+	font-weight: 400;
+	color: black;
+	
+}
+
+.news-and-social-title2 {
+	font-size: 28px;
+    line-height: 40px;
+	color: black;
+	width: 550px;
+	margin-bottom: 20px;
+}
+
+
+
+.news-container {
+	height: 40px;
+	width: 100%;
+  padding-left: -10px;
+  
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.product-container-title {
+  margin-left: 90px;
+}
+
+.NE-contaier {
+	height: 50px;
+}
+
+.news-events-container-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	height: 300px;
+  
+  margin-left: 30px;
+}
+
+.news-events-item {
+	background-color: white;
+	width: 230px;
+	height: 230px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+.news-events-item:hover{
+  opacity: 0.5em;
+  cursor: pointer;
+}
+
+
+/**********************************
+  subscribe section (hp)
+**********************************/
+
+.subscribe {
+	height: 300px;
+	background-image: url(images/hp-subscribe.png);
+	
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.subscribe-container {
+	width: 540px;
+	height: 200px;
+	margin-left: 70px;
+}
+
+.light-heading {
+	font-size: 0.8em
+	font-weight: 300;
+	color: white;
+}
+
+.heavy-heading {
+	font-size: 2em;
+	color: white;
+	width: 550px;
+	margin-bottom: 20px;
+}
+
+.subscribe-form {
+	height: 30px;
+	width: 410px;
+	border-bottom: 2px solid white;
+	margin-top: 50px;
+	
+}
+
+.subscribe-btn-email {
+	color: white;
+	position: absolute;
+	font-size: 1em;
+}
+
+.subscribe-btn-send {
+	color: white;
+  text-align: right;
+	position: relative;
+	left: 3px;
+	font-size: 1.3em;
+    letter-spacing: 10px;
+	font-weight: 300;
+}
+
+.subscribe-form:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+
+/**********************************
+  product grid section (hp)
+**********************************/
+
+.product-container-title {
+    width: 80%;
+	float: left;
+}
+
+.show-all-rightalign {
+	float: right;
+	width: 20%;
+	color: #8D8D8D;
+  margin-right: 30px;
+}
+
+
+
+h2, h3 {
+	color: white;
+
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 0.8em;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+h1{
+  margin-top: 10px;
+}
+
+
+
+
+/* silvia extras */
+
+.margin-download-btn{
+  margin-top: 80px;
+}
+
+.margin-download-btn2{
+  margin-top: 40px;
+}
+
+.margin-grey{
+  margin-top: -120px;
+  margin-right: 150px;
+}
+
+
+/* icons */
+
+.list-expertise{
+  width: 100vw;
+  
+  margin-top: -20px;
+  margin-left: -150px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-expertise ul{
+  margin-top: 40px;
+  margin-bottom: 74px;
+  padding: 0px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.list-expertise ul li{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  
+}
+
+
+.list-expertise h4 {
+  max-width: 350px;
+  padding-right: 60px;
+  padding-left: 60px;
+  font-size: 14px;
+  font-weight: 500;
+  
+  
+  text-align: center;
+  line-height: 2em;
+  letter-spacing: 4px;
+  
+}
+
+.item-border {
+  border-right: 1px solid black; 
+  
+}
+
+
+/* icons homepage products */
+
+.products-list-expertise{
+  width: 100%;
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-list-expertise ul{
+  padding: 0px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.products-list-expertise ul li{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  
+  width: 190px;
+  height: 135px;
+}
+
+.products-list-expertise ul li img{
+  width: 80px;
+  height: auto;
+  margin: 0 30px 0 30px;
+}
+
+.products-list-expertise h4 {
+  max-width: 350px;
+  font-size: 0.7em;
+  font-weight: 500;
+  
+  margin-top: 20px;
+  
+  text-align: center;
+  line-height: 0;
+  letter-spacing: 4px;
+}
+
+.products-list-expertise h4:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.vertical-icon{
+  height: 80px!important;
+  width: auto!important;
+  margin: 0 70px 0 70px!important;
+}
+
+.socials-hover{
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+}
+
+.socials-hover:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* animations */
+
+.video-animation-1{
+  animation: video-animation-text-1;
+  animation-duration: 2s;
+  animation-delay: 23s;
+  animation-timing-function: ease-out;
+  
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-top: 60px;
+}
+
+.video-animation-2{
+  animation: video-animation-text-2;
+  animation-duration: 2s;
+  animation-delay: 24s;
+  animation-timing-function: ease-out;
+  
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes video-animation-text-1{
+  0% {opacity: 0;
+      margin-top: 60px; 
+  }
+  100% {opacity: 1;
+        margin-top: 12.8px; 
+}
+}
+
+@keyframes video-animation-text-2{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.video-animation-img{
+  animation: video-animation-img-1;
+  animation-duration: 2s;
+  animation-delay: 23s;
+  animation-timing-function: ease-out;
+  
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes video-animation-img-1{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

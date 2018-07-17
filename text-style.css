@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.VRT-container-title {
+  margin: 0px;
+  padding: 20px;
+  
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  
+  
+}
