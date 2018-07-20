@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+box-sizing: border-box;
 }
 
 html{
@@ -7,56 +7,61 @@ html{
 }
 
 body {
-  background-color: #FFFFFF;
-  margin: auto;
+  margin: 0 auto;
 	
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 14px;
-}
-
-.wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 header {
-  width: 100%;
+  max-width: 100%;
   
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   
   background-image: url(images/menu-bg.png);
   background-repeat: repeat-x;
 }
 
+@media only screen and (max-width: 1050px) {
+  header{
+    height: 100px;
+  }
+}
+
+
+footer{
+  width: 100%;
+  height: 200px;
+  
+  background-image: url(images/footer2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*********************************
 HEADING STYLE
 **********************************/
-.product-heading-features {
-	height: 100px;
-	margin-left: 70px;
-	
-}
 
 .centering {
-	height: 250px;
-	text-align: center;
-	margin: auto;
+  height: 250px;
+  text-align: center;
+  margin: auto;  
 }
 
 ul {
-	list-style: none;
+  list-style: none;
   margin: auto;
-	margin-top: 125px;
 }
 
 li {
-	display: inline;
-	margin: 20px;
-	color: #5C5C5C;
-	text-decoration: underline;
+  display: inline;
+  margin: 20px;
+  color: #5C5C5C;
+  text-decoration: underline;
+  margin: 0;
 }
 
 
@@ -65,28 +70,20 @@ a {
 	color: #5C5C5C;
 }
 
-.product-heading1 {
-	color: black;
-	font-size: 14pt;
-	font-weight: 300;
-}
-
-.product-heading2 {
-	color: black;
-	font-size: 2.5em;
-	width: 550px;
-}
-
 
 /*********************************
 SERVICES CONTAINER
 **********************************/
 .services-container {
   height: 600px;
+  width: 100%;
   background-image: url(images/bg-intro.png);
+  background-position: center;
   
   display: flex;
   align-items: center;
+  
+  position: relative;
 }
 
 .services-container a{
@@ -98,20 +95,24 @@ SERVICES CONTAINER
 why container
 **********************************/
 .three-steps-container {
-  height: 350px;
+  height: auto;
+  width: 100%;
+  
   background-image: url(images/why-bg.png);
+  
+  padding: 50px;
 }
 
+
+
 .list-expertise ul{
-  margin-top: 40px;
-  margin-bottom: 74px;
-  padding: 0px;
+  padding: 50px 0 0 0!important;
   
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  align-items: center;
+  
   text-transform: uppercase;
 }
 
@@ -126,11 +127,8 @@ why container
 
 .list-expertise h4 {
   max-width: 300px;
-  padding-right: 60px;
-  padding-left: 60px;
   font-size: 14px;
-  font-weight: 500;
-  
+  font-weight: 500;  
   
   text-align: center;
   line-height: 2em;
@@ -148,20 +146,11 @@ why container
 
 
 
-
-
 /*********************************
 titles
 **********************************/
-.dark-hedaing {
-  margin-top: 0;
-  padding-top: 40px;
-  margin-left: 70px;
-}
-.white-title {
+.white{
   color: white;
-  margin-top: 0;
-  padding-top: 40px;
 }
 
 
@@ -170,44 +159,102 @@ titles
 how container
 **********************************/
 .services-steps-container {
-  height: 480px;
+  width: 100%;
+  height: auto;
+  
   background-color: #83B1C6;
+  
   margin-top: 0;
+  padding: 50px;
 }
 
 
 .steps-description-container{
   display: flex;
-  width: 1000px;
-  margin: auto;
-  color: white;
+  
+  width: 100%;
+  height: auto;
+  
+  color: white!important;
+  
+  padding: 0 0 0 40px;
 }
 
 .steps {
-  padding: 20px;
+  padding: 30px;
 }
 
-.btn-left {
-	
+@media only screen and (max-width: 767px) {
+  .steps-description-container{
+    padding-left: 0;
+  }
+  .services-steps-container{
+    padding-right: 20px;
+  }
+  .form-one-m{
+    opacity: 1; 
+  }
+  .form-one{
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .steps-description-container{
+    flex-wrap: wrap;
+  }
 }
 
 
 .video-container {
-	background-image: url(images/video-bg.png);
-	height: 510px;
+  background-image: url(images/video-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  height: 510px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+}
+
+.video-container h2{
+  padding: 20px;
 }
 
 
 .form-container {
-  height: 1500px;
+  height: 1520px;
   background-color: #ECEEF0;
+  
+  padding: 50px;
 }
 
 .form-one {
-	background-image: url(images/form-bg.png);
-	width: 1030px;
-	height: 1220px;
-	margin: auto;
+  background-image: url(images/form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 100%;
+  height: 1220px;
+  margin: 40px 0 0 0;
+}
+
+.form-one-m {
+  background-image: url(images/form-bg-m.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 100%;
+  height: 1230px;
+  margin: 40px 0 0 0;
+  
+  opacity: 0;
+  z-index: 30;
 }
 
 
@@ -217,8 +264,8 @@ BUTTON STYLES
 .btn-cta {
   display: inline-block;
   
-  margin-top: 40px;
-  padding: 10px 40px;
+  margin: 40px 0 0 20px;
+  padding: 20px 40px;
   
   border: 2px solid white;
   color: white;
@@ -226,8 +273,6 @@ BUTTON STYLES
   text-decoration: none;
   
   transition: background 300ms;
-  
-  margin-left: 130px;
 }
 
 .btn-cta:hover {
@@ -237,21 +282,18 @@ BUTTON STYLES
 }
 
 .black {
-	border: 2px solid black;
+  border: 2px solid black;
   color: black;
+  padding: 20px 70px;
 }
-
-.btn-left {
-	margin-left: 25px;
-}
-
 
 
 h2 {
-  font-size: 1.8em;
+  font-size: 2em;
   line-height: 1.3em;
   margin-top: 0;
   font-weight: 300;
+  text-align: center;
 }
 
 h3 {
@@ -262,13 +304,14 @@ h3 {
 }
 
 h4{
-  font-weight: 500;
-  font-size: 1.9em!important;
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0;
 }
 
 h5{
   font-size: 1.3em;
-  line-height: 1em;
+  line-height: 1.5em;
   letter-spacing: 1px;
   font-weight: 400;
 }
@@ -278,17 +321,28 @@ p{
   line-height: 1.6em;
   font-weight: 300;
   letter-spacing: 1px;
+  
+  margin-top: -10px;
 }
 
+.product-heading1 {
+  color: black;
+  font-size: 1em!important;
+  font-weight: 300;
+  letter-spacing: 7px;
+}
+
+.product-heading2 {
+  color: black;
+  font-size: 2.5em;
+  width: 550px;
+}
 
 
 /* icons */
 
 .list-expertise{
-  width: 100vw;
-  
-  margin-top: -40px;
-  margin-left: -150px;
+  width: 100%;
   
   display: flex;
   align-items: center;
@@ -296,8 +350,6 @@ p{
 }
 
 .list-expertise ul{
-  margin-top: 40px;
-  margin-bottom: 74px;
   padding: 0px;
   
   display: flex;
@@ -305,6 +357,7 @@ p{
   justify-content: center;
   align-content: center;
   align-items: center;
+  
   text-transform: uppercase;
 }
 
@@ -321,39 +374,111 @@ p{
 
 .list-expertise h6 {
   max-width: 350px;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding: 0 60px;
+  
   font-size: 14px;
   font-weight: 500;
   
   color: black;
   
-  
   text-align: center;
   line-height: 2em;
   letter-spacing: 4px;
-  
 }
+
+@media only screen and (max-width: 1000px) {
+  .list-expertise h6{
+    padding: 0 30px;
+  }
+}
+
 
 .item-border {
   border-right: 1px solid black; 
 }
 
-.margin-extra{
-  margin-left: 150px;
-}
-
 .menu-gray{
   margin-top: 150px;
   position: relative;
+  font-size: 0.8em;
+}
+
+ol{
+  padding: 0;
+}
+
+ol li{
+  margin: 0 20px;
+}
+
+.animate-hero{
+  transition: color 300ms;
+}
+.animate-hero:hover{
+  color: black;
 }
 
 .line-gray{
   position: absolute;
   bottom: -100px;
-  left: 275px;
+  left: 50%;
   
   height: 70px;
   width: 1px;
   background-color: darkgray;
+}
+
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .product-heading2{
+    padding: 0 50px;
+    width: auto;
+    
+    font-size: 1.8em;
+    line-height: 1.5em;
+  }
+  .product-heading1{
+    margin-bottom: 20px;
+  }
+  
+  .menu-gray{
+    margin: 0;
+    margin-top: 180px!important;
+    
+    display: flex;
+    flex-direction: column;
+    
+    line-height: 2.2em;
+    font-size: 0.7em;
+    
+    position: absolute;
+    bottom: 50px;
+    left: 35%;
+  }
+  .line-gray{
+    bottom: -80px;
+  }
+  
+  .list-expertise ul{
+    flex-wrap: wrap;
+  }
+  .item-border{
+    border: none;
+  }
+  .list-expertise ul li{
+    margin-bottom: 30px;
+  }
+  
+  .steps{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .special-step{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 0!important;
+  }
 }

@@ -10,34 +10,47 @@
 
   
   
-<div class="wrapper">
- 
+ <!--
   <header>
-    <img src="images/menu-left.png" alt="" width="205" height="161">
-    <img src="images/menu-right.png" alt="" width="790" height="161">
+    <img src="images/menu-left-m.png" alt="" width="205" height="161">
+    <img src="images/menu-right-m.png" alt="" width="790" height="161">
+    
+    <section class="main-img">
+      <img srcset="images/menu-left.png 205w,
+       images/menu-left-m.png 312w"
+     sizes="(max-width: 312px) 205px,
+            312px"
+     src="images/menu-left" alt="!">      
+      <img srcset="images/menu-right.png 790w,
+       images/menu-right-m.png 358w"
+     sizes="(max-width: 790px) 790px,
+            358px"
+     src="images/menu-left" alt="!">      
+    </section>
   </header> 
+-->
   
   
   <div class="services-container">
-     <section class="product-heading-features centering">
+     <section class="centering">
 		<h3 class="product-heading1 animate-hero"> LUCEPLAN SERVICES</h3>
 		<h2 class="product-heading2 animate-hero"><strong>Become a Luceplan expert & expand your business,</strong> in three simple steps</h2>
 		
-		<ul class="menu-gray">
+		<ol class="menu-gray">
 			<li><a href="#why" class="animate-hero">01. Why?</a></li>
 			<li><a href="#how" class="animate-hero">02. How</a></li>
 			<li><a href="#request" class="animate-hero">03. Request</a></li>
             <div class="line-gray"></div>
-		</ul>
+		</ol>
 	 </section>
   </div>
   
   <div class="three-steps-container">
-    <h4 class="product-heading2 dark-hedaing" id="why">01. Why?</h4>
+    <h4 id="why">01. Why?</h4>
     
       <div class="list-expertise">
        <ul>
-         <li class="animate-1 margin-extra">
+         <li class="animate-1">
          <img src="icons/icon-01.svg" width="44" height="44"><h6 class="item-border">JOIN OUR FREE TRAINING COURSE
          </h6>
          </li>
@@ -57,16 +70,16 @@
   
   <div class="services-steps-container">
      <section class="product-heading-features">
-        <h4 class="product-heading2 white-title" id="how">02. How?</h4>
+        <h4 id="how" class="white">02. How?</h4>
      </section>
      
      <div class="steps-description-container">
        <div class="steps animate-2">
-         <h5>Luceplan Training Cources</h5>
+         <h5>Training Courses</h5>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsa voluptates in nam porro dignissimos quia, nihil voluptas soluta sit neque quidem quod nulla ut sunt impedit, architecto facilis nostrum!</p>
        </div>
        
-       <div class="steps animate-2">
+       <div class="steps special-step animate-2">
          <h5>Advantages</h5>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsa voluptates in nam porro dignissimos quia, nihil voluptas soluta sit neque quidem quod nulla ut sunt impedit, architecto facilis nostrum!</p>
        </div>
@@ -76,31 +89,28 @@
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsa voluptates in nam porro dignissimos quia, nihil voluptas soluta sit neque quidem quod nulla ut sunt impedit, architecto facilis nostrum!</p>
        </div>
      </div>
-     <div class="btn-left">
-       	<a href="#" class="btn-cta">Ask For a Private Consult</a>
-			</div>
+    <div>
+       <a href="#" class="btn-cta">Ask For a Private Consult</a>
+    </div> 
   </div>
   
-  <div class="video-container"></div>
+  <div class="video-container">
+    <h2>Discover our success stories.</h2>
+    <img src="icons/play-icon.png" width="63" height="63">
+  </div>
   
   <div class="form-container">
-    <h4 class="product-heading2 dark-hedaing" id="request">03. Request the Collaboration</h4>
+    <h4 id="request">03. Request the Collaboration</h4>
+  
+    <div class="form-one"></div>
+    <div class="form-one-m"></div>
     
-    <div class="form-one">
-    </div>
-    
-    <div class="btn-left">
-       	<a href="#" class="btn-cta black">Submit</a>
-		</div>
+    <a href="#" class="btn-cta black">Submit</a>
   </div>
-		
+  
+  <footer></footer>
 	
-	<footer>
-		<img src="images/footer.png" width="1280px">
-	</footer>
-	
-</div>
-	
+
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script>
     // JavaScript
@@ -109,7 +119,6 @@
     sr.reveal('.animate-2', { duration: 2000 }, 80);
     sr.reveal('.animate-hero', { duration: 1500 }, 150);
   </script>
-
   
   
 </body>
